@@ -1,0 +1,19 @@
+extends layout
+
+block content
+  h1 #{title}: #{product.title}
+  
+  //- p #[strong Author:] 
+  //-   a(href=product.author.url) #{product.author.name}
+  p #[strong Summary:] #{product.summary}
+  p #[strong Price:] #{product.price}
+  
+  
+  hr
+  p
+    a(href=product.url+'/delete') Delete Product
+  p
+    a(href=product.url+'/update') Update Product
+  
+  div(style='margin-left:20px;margin-top:20px')
+    
